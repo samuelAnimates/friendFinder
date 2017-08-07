@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "web app made as a homework assignment for Northwestern Coding Bootcamp April 2017",
+  "main": "survey.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smendez92/friendFinder.git"
+  },
+  "author": "Samuel R. Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smendez92/friendFinder/issues"
+  },
+  "homepage": "https://github.com/smendez92/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}
