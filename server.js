@@ -20,6 +20,13 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
+// The below points our server to a series of route files.
+// ================================================================================
+
+require("./app/routing/apiRoutes.js")(app);
+//require("./app/routing/htmlRoutes.js")(app);
+
+
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {

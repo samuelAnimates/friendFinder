@@ -1,5 +1,5 @@
 // Friends (DATA)
-[{
+var friendsArray = [{
   "name": "Doug",
   "photoURL": "../public/assets/images/Doug.jpg",
   "scores":[
@@ -75,3 +75,5 @@
     5
   ]
 }];
+
+module.exports = friendsArray;
