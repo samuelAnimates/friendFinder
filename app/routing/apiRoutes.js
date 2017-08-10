@@ -31,10 +31,48 @@ module.exports = function(app) {
 	and handle the compatibility logic.
 	*/
 	
-	app.post("/api/tables", function(req, res) {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
-    	console.log("POST");
+	app.post("/api/friends", function(req, response) {
+
+
+   		var newFriend = req.body;
+
+   		var lowestScore = Math.min( compareAllFriends( newFriend, friendsData) )
+
+   		var newBestFriend = friendsData.indexOf(lowestScore);
+
+    	response.json(newBestFriend);
+
 	});
 
+};
+
+function compareAllFriends( friend1, friendsArray){
+
+	var scoresDiffArray = [];
+
+	for (i=0; i<friendsArray.length; i++){
+
+		var potentialFriend = friendsArray[i];	
+		
+		scoresDiffArray.push( compareScores(newFriend, potentialFriend) );
+
+	}
+
+	return scoresDiffArray;
+}
+
+function compareScores(friendA, friendB){
+
+	var totalDifferences = 0;
+
+	for (j=0; j<friendB.scores.length; j++){
+		totalDifferences += diff(friendsArray[i].scores[j], newFriend.scores[j]);
+	}
+
+	return totalDifferences;
+
+};
+
+function diff(a, b){
+	return Math.abs(a - b);
 };
