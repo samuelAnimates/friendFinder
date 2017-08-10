@@ -6,7 +6,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 //access environmental variables for username, password, host
-require('dotenv').config({path: './envVar.env'});
+require('dotenv').config({path: './dotenv.env'});
 
 // Sets up the Express App
 // =============================================================
@@ -19,3 +19,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+
+// Starts the server to begin listening
+// =============================================================
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});
