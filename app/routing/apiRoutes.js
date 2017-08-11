@@ -35,10 +35,12 @@ module.exports = function(app) {
 
 
    		var newFriend = req.body;
+   		console.log(newFriend);
 
-   		var lowestScore = Math.min( compareAllFriends( newFriend, friendsData) )
+   		var newBestFriendIndex = compareAllFriends( newFriend, friendsData);
 
-   		var newBestFriend = friendsData.indexOf(lowestScore);
+   		var newBestFriend = friendsData[newBestFriendIndex];
+   		console.log("newBESTFRIEND: " + newBestFriend.name);
 
     	response.json(newBestFriend);
 
@@ -54,11 +56,12 @@ function compareAllFriends( friend1, friendsArray){
 
 		var potentialFriend = friendsArray[i];	
 		
-		scoresDiffArray.push( compareScores(newFriend, potentialFriend) );
+		scoresDiffArray.push( compareScores(friend1, potentialFriend) );
 
 	}
 
-	return scoresDiffArray;
+	return scoresDiffArray.indexOf( Math.min.apply(null, scoresDiffArray) );
+
 }
 
 function compareScores(friendA, friendB){
@@ -66,7 +69,7 @@ function compareScores(friendA, friendB){
 	var totalDifferences = 0;
 
 	for (j=0; j<friendB.scores.length; j++){
-		totalDifferences += diff(friendsArray[i].scores[j], newFriend.scores[j]);
+		totalDifferences = ( totalDifferences + diff(friendA.scores[j], friendB.scores[j]) );
 	}
 
 	return totalDifferences;

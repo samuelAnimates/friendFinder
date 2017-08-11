@@ -1,4 +1,3 @@
-
 // Dependencies
 // =============================================================
 var express = require("express");
@@ -11,7 +10,7 @@ require('dotenv').config({path: './dotenv.env'});
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 5000;
+var PORT = 8080;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
