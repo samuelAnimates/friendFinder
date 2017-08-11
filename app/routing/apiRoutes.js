@@ -60,7 +60,17 @@ function compareAllFriends( friend1, friendsArray){
 
 	}
 
-	return scoresDiffArray.indexOf( Math.min.apply(null, scoresDiffArray) );
+	var bffIndex =  scoresDiffArray.indexOf( Math.min.apply(null, scoresDiffArray) );
+
+	if (bffIndex === NaN || bffIndex < 0){
+
+		return 0
+
+	}
+
+	else{
+		return bffIndex;
+	}
 
 }
 
