@@ -398,8 +398,8 @@
 
 		else {
 			var userFriend = {
-				"name": $('#nameInput').val(),
-				"photoURL": $('#photoInput').val(),
+				"name": $('#nameInput').val().trim(),
+				"photoURL": $('#photoInput').val().trim(),
 				"scores": [
 					parseInt( $('input:radio[name=question1]:checked').val() ),
 					parseInt( $('input:radio[name=question2]:checked').val() ),
@@ -413,21 +413,23 @@
 					parseInt( $('input:radio[name=question10]:checked').val() )
 				]
 			}
+
+			console.log(userFriend);
+
+			$.post("/api/friends", userFriend,
+				
+				function(data) {
+
+					console.log(data.name);
+					$("#FOO").html(data.name);
+
+				}
+
+			);
 		}
-		console.log(userFriend);
-
-		$.post("/api/friends", userFriend,
-	        
-	        function(data) {
-
-	        	console.log(data.name);
-				$("#FOO").html(data.name);
-
-	        }
-
-	    );
 
 	});
+	
 
 	</script>
 
