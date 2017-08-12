@@ -37,12 +37,7 @@ module.exports = function(app) {
    		var newFriend = req.body;
    		console.log(newFriend);
 
-   		var newBestFriendIndex = compareAllFriends( newFriend, friendsData);
-
-   		var newBestFriend = friendsData[newBestFriendIndex];
-   		console.log("newBESTFRIEND: " + newBestFriend.name);
-
-    	response.json(newBestFriend);
+    	response.json( friendsData[ compareAllFriends( newFriend, friendsData) ] );
 
 	});
 
