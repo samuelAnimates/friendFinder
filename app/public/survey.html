@@ -7,317 +7,330 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+	<link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
 
 	<div class="jumbotron">
 		<h1>AYYY LMAO</h1>
-		<div id="FOO"></div>
+		<div id="FOO">A</div>
 	</div>
 
-	<form>
-		<div class="row">
+	<form id="friendship-survey">
+
+		<div class="row pad-all-1-em">
 			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 1:
+				<h3>1.) I feel comfortable at a party where I only know the host</h3>
 			</div>
 			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
 				<label class="radio-inline">
-					<input type="radio" name="question1" id="q1a1" value="option1">1. Completely Disagree
+					<input type="radio" name="question1" id="q1a1" value="1">1. Completely Disagree
 				</label>
 			</div>
 			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
 				<label class="radio-inline">
-					<input type="radio" name="question1" id="q1a2" value="option2">2. Somewhat Disagree
+					<input type="radio" name="question1" id="q1a2" value="2">2. Somewhat Disagree
 				</label>
 			</div>
 			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
 				<label class="radio-inline">
-					<input type="radio" name="question1" id="q1a3" value="option3">3. Neutral
+					<input type="radio" name="question1" id="q1a3" value="3">3. Neutral
 				</label>
 			</div>
 			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
 				<label class="radio-inline">
-					<input type="radio" name="question1" id="q1a4" value="option3">4. Somewhat Agree
+					<input type="radio" name="question1" id="q1a4" value="4">4. Somewhat Agree
 				</label>
 			</div>
 			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
 				<label class="radio-inline">
-					<input type="radio" name="question1" id="q1a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 2:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question2" id="q2a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question2" id="q2a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question2" id="q2a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question2" id="q2a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question2" id="q2a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 3:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question3" id="q3a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question3" id="q3a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question3" id="q3a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question3" id="q3a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question3" id="q3a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 4:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question4" id="q4a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question4" id="q4a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question4" id="q4a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question4" id="q4a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question4" id="q4a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 5:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question5" id="q5a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question5" id="q5a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question5" id="q5a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question5" id="q5a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question5" id="q5a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 6:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question6" id="q6a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question6" id="q6a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question6" id="q6a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question6" id="q6a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question6" id="q6a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 7:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-						<input type="radio" name="question7" id="q7a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question7" id="q7a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question7" id="q7a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question7" id="q7a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question7" id="q7a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 8:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question8" id="q8a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question8" id="q8a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question8" id="q8a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question8" id="q8a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question8" id="q8a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 9:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question9" id="q9a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question9" id="q9a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question9" id="q9a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question9" id="q9a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question9" id="q9a5" value="option3">5. Completely Disagree
-				</label>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				QUESTION 10:
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question10" id="q10a1" value="option1">1. Completely Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question10" id="q10a2" value="option2">2. Somewhat Disagree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question10" id="q10a3" value="option3">3. Neutral
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question10" id="q10a4" value="option3">4. Somewhat Agree
-				</label>
-			</div>
-			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
-				<label class="radio-inline">
-					<input type="radio" name="question10" id="q10a5" value="option3">5. Completely Disagree
+					<input type="radio" name="question1" id="q1a5" value="5">5. Completely Disagree
 				</label>
 			</div>
 		</div>
 
-		<button type="submit" class="btn btn-default">Submit</button>
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>2.) I feel comfortable being on stage</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question2" id="q2a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question2" id="q2a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question2" id="q2a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question2" id="q2a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question2" id="q2a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>3.) I feel comfortable being alone at home.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question3" id="q3a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question3" id="q3a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question3" id="q3a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question3" id="q3a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question3" id="q3a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>4.) I feel comfortable being the youngest person in a room.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question4" id="q4a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question4" id="q4a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question4" id="q4a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question4" id="q4a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question4" id="q4a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>5.) I feel comfortable being the oldest person in a room.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question5" id="q5a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question5" id="q5a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question5" id="q5a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question5" id="q5a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question5" id="q5a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>6.) I feel comfortable not planning out a vacation well in advance.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question6" id="q6a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question6" id="q6a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question6" id="q6a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question6" id="q6a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question6" id="q6a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>7.) I feel comfortable not being on time to an appointment.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+						<input type="radio" name="question7" id="q7a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question7" id="q7a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question7" id="q7a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question7" id="q7a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question7" id="q7a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>8.) I feel comfortable letting others know how I feel.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question8" id="q8a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question8" id="q8a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question8" id="q8a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question8" id="q8a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question8" id="q8a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>9.) I feel comfortable losing a game among friends.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question9" id="q9a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question9" id="q9a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question9" id="q9a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2 ">
+				<label class="radio-inline">
+					<input type="radio" name="question9" id="q9a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question9" id="q9a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<div class="row pad-all-1-em">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>10.) I feel comfortable being out on the ocean.</h3>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question10" id="q10a1" value="1">1. Completely Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question10" id="q10a2" value="2">2. Somewhat Disagree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question10" id="q10a3" value="3">3. Neutral
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question10" id="q10a4" value="4">4. Somewhat Agree
+				</label>
+			</div>
+			<div class="col-s-2 col-md-2 col-lg-2 col-xl-2">
+				<label class="radio-inline">
+					<input type="radio" name="question10" id="q10a5" value="5">5. Completely Disagree
+				</label>
+			</div>
+		</div>
+
+		<button id="friendship-survey-submit-button" type="submit" class="btn btn-default">Submit</button>
+
 	</form>
 
 	<!-- jQuery library -->
@@ -325,34 +338,43 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<script>
-		
+	<script type="text/javascript">
+	
+	$("#friendship-survey-submit-button").on("click", function(e){
+		e.preventDefault();
+
 		var userFriend = {
 		  "name": "Mimi",
 		  "photoURL": "http://lorempixel.com/200/200/",
-		  "scores":[
-		    1,
-		    1,
-		    1,
-		    1,
-		    1,
-		    1,
-		    1,
-		    1,
-		    1,
-		    1
+		  "scores": [
+		    parseInt( $('input:radio[name=question1]:checked').val() ),
+		    parseInt( $('input:radio[name=question2]:checked').val() ),
+		    parseInt( $('input:radio[name=question3]:checked').val() ),
+		    parseInt( $('input:radio[name=question4]:checked').val() ),
+		    parseInt( $('input:radio[name=question5]:checked').val() ),
+		    parseInt( $('input:radio[name=question6]:checked').val() ),
+		    parseInt( $('input:radio[name=question7]:checked').val() ),
+		    parseInt( $('input:radio[name=question8]:checked').val() ),
+		    parseInt( $('input:radio[name=question9]:checked').val() ),
+		    parseInt( $('input:radio[name=question10]:checked').val() )
+		    
 		  ]
 		}
+
+		console.log(userFriend);
 
 		$.post("/api/friends", userFriend,
 	        
 	        function(data) {
 
+	        	console.log(data.name);
 				$("#FOO").html(data.name);
 
 	        }
 
 	    );
+
+	});
 
 	</script>
 
