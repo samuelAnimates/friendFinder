@@ -1,7 +1,7 @@
 // Friends (DATA)
 var friendsArray = [{
   "name": "Doug",
-  "photoURL": "../public/assets/images/Doug.jpg",
+  "photoURL": "/assets/images/Doug.jpg",
   "scores":[
     5,
     1,
@@ -16,7 +16,7 @@ var friendsArray = [{
   ]
 }, {
   "name": "Kat",
-  "photoURL": "../public/assets/images/Kat.jpg",
+  "photoURL": "/assets/images/Kat.jpg",
   "scores":[
     1,
     2,
@@ -31,7 +31,7 @@ var friendsArray = [{
   ]
 }, {
   "name": "Lizzy",
-  "photoURL": "../public/assets/images/Lizzy.jpg",
+  "photoURL": "/assets/images/Lizzy.jpg",
   "scores":[
     3,
     4,
@@ -46,7 +46,7 @@ var friendsArray = [{
   ]
 }, {
   "name": "Mary",
-  "photoURL": "../public/assets/images/Mary.jpg",
+  "photoURL": "assets/images/Mary.jpg",
   "scores":[
     2,
     3,
@@ -61,7 +61,7 @@ var friendsArray = [{
   ]
 }, {
   "name": "Cam",
-  "photoURL": "../public/assets/images/Cam.jpg",
+  "photoURL": "/assets/images/Cam.jpg",
   "scores":[
     1,
     4,

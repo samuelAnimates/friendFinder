@@ -7,34 +7,35 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
 </head>
 <body>
 
-	<div class="jumbotron">
+	<div class="jumbotron text-align-center">
 		<h1>ANSWER ALL THE QUESTIONS.<br>FIND YOUR NEW BFF.</h1>
 	</div>
 
 	<div class="container">
 		
 		<h2>NEW BEST FRIEND:</h2>
-		<!-- Trigger the modal with a button -->
-		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-		<!-- Modal -->
+		
+		<!-- RESULTS Modal -->
 		<div class="modal fade" id="myModal" role="dialog">
 			
 			<div class="modal-dialog">
 
 				<!-- Modal content-->
-				<div class="modal-content">
+				<div class="modal-content text-align-center">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 						<h4 class="modal-title">NEW BEST FRIEND</h4>
 					</div>
 					<div class="modal-body">
-						<p>Some text in the modal.</p>
+						<div>
+							<img id="BFF-pic" src="http://lorempixel.com/200/200">
+						</div>
+						<p>Name:<span id="JS-BFF-name"></span></p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -47,9 +48,7 @@
 
 	</div>
 
-	<div id="FOO">A</div>
-
-	<div class="container">
+	<div class="container margin-bottom-2em">
 		<form id="friendship-survey">
 
 			<div class="form-group">
@@ -372,7 +371,9 @@
 				</div>
 			</div>
 
-			<button id="friendship-survey-submit-button" type="submit" class="btn btn-default">Submit</button>
+			<div class="pad-all-1-em">
+				<button id="friendship-survey-submit-button" type="submit" class="btn btn-default pad-all-1-em">Submit</button>
+			</div>
 
 		</form>
 	
@@ -420,12 +421,15 @@
 				
 				function(data) {
 
-					console.log(data.name);
-					$("#FOO").html(data.name);
+					$("#BFF-pic").attr("src", data.photoURL);
+					$("#JS-BFF-name").html(data.name);
 
 				}
 
 			);
+
+			$("#myModal").modal('show');
+
 		}
 
 	});

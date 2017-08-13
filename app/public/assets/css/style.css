@@ -16,8 +16,20 @@
 
 }
 
+.margin-bottom-2em{
+
+	margin-bottom: 2em;
+
+}
+
 .pad-all-1-em{
 
 	padding: 1em 1em 1em 1em;
+
+}
+
+.text-align-center{
+
+	text-align: center;
 
 }
