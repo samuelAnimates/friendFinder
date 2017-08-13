@@ -4,7 +4,8 @@
   "description": "web app made as a homework assignment for Northwestern Coding Bootcamp April 2017",
   "main": "survey.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "path": "^0.12.7"
-  }
+  },
+  "engines": {
+    "node": "6.10.1"
+  },
+  "devDependencies": {}
 }
